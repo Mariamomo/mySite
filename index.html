@@ -21,12 +21,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <!--Body Start-->
-<body class="fixed-header-body">
-<div id="loading" style="display: none;">
-  <div class="load-circle">
-      <span class="one"></span>
-  </div>  
-</div> 
+<body class="fixed-header-body grid">
 <!--header start-->
 <header class="header header-style-3 navbar-light">
   <div class="container">
@@ -82,16 +77,17 @@
        </section>
 <!--home end-->
         <!--about us start-->
-        <section id="about" class="section">
+<section id="about" class="section">
            <div class="container">
                <div class="row">
                    <div class="col-md-5 align-self-center">
                        <img src="image/maria.jpg" alt="maria" class="img-fluid">
                    </div>
                    <div class="col-sm-12 col-md-7 ">
-                       <h5 class="font-alt mt-sm-3">Hello! i'm Maria</h5>
-                       <table class="table">
-                               <tr>
+                       <h5 class="font-alt">Hello! I'm Maria</h5>
+                       <div class="table-responsive-sm">
+  <table class="table">
+   <tr>
                                    <td>NAME</td>
                                    <td>:</td>
                                    <td>MARIA FERDOUS MOMO</td>
@@ -116,14 +112,18 @@
                                    <td>:</td>
                                    <td>mariamomo6810@gmail.com</td>
                                </tr>
-                               
-                    </table>
-                     <div> <ul class="ul">
-                          <li class="li"><a style="border: 1px solid #3b5998; color:#3b5998;" href="#"><i class="fab fa-facebook-f facebook"></i></a></li>
-                          <li class="li"><a style="border: 1px solid #faaa5e;" href="#"><i class="fab fa-google google"></i></a></li>
-                          <li class="li"><a style="border: 1px solid #895a4d;" href="#"><i class="fab fa-linkedin-in linkdin"></i></a></li>
-                          <li class="li"><a style="border: 1px solid #026466;" href="#"><i class="fab fa-xing xing"></i></a></li>
-                      </ul> </div>
+  </table>
+</div>
+                    <div> 
+                          <ul class="ul">
+                          <li class="li"><a class="face"  href="https://www.facebook.com/nil.oporajita.357"><i class="fab fa-facebook-f facebook"></i></a></li>
+                          <li class="li"><a class="goog" href="#" ><i class="fab fa-google google"></i></a></li>
+                          <li class="li"><a class="link" href="https://www.linkedin.com/in/
+mariaferdousmomo-42b359173/"><i class="fab fa-linkedin-in linkdin"></i></a></li>
+                          <li class="li" style="padding-right: 0px;"><a class="xin" href="https://www.xing.com/profile/MariaFerdous_Momo/cv"><i class="fab fa-xing xing"></i></a></li>
+                      </ul> 
+                    </div>
+                    
                        </div>
                        </div>
                        </div>
@@ -132,13 +132,13 @@
         </section>
         <!--about us end-->
         <!--skill start-->
-        <section id="skill" class="section" style="background: none">
+        <section id="skill" class="section grid" style="background: none">
           <div class="container">
             <h5 class="font-alt text-center text-uppercase font-w-600">
                     skill   
                    </h5>
              <div class="row justify-content-center">
-                <div class="col-md-6 text-center m-60px-b">
+                <div class="col-md-6 text-center">
                     <div class="skills col-md-6 col-lg-12">
                         <li>
                         <h6 class="h6">HTML5</h6>
@@ -158,7 +158,7 @@
                     </li>
                     </div>
                 </div>
-                <div class="col-md-6 text-center m-60px-b">
+                <div class="col-md-6 text-center">
                     <div class="skills col-md-6 col-lg-12">
                       <li>
                        <h6>BOOTSTRAP</h6>
@@ -188,9 +188,9 @@
         <!--skill end-->
         <!--education start-->
         <section id="eduaction" class="section">
-           <div class="container">
             <div class="row ustify-content-center">
-                <div class="tree">
+                <div class="container">
+                    <div class="tree">
          <ul>
             <li>
                 <a class="aa" href=""><h3>Education</h3></a>
@@ -218,9 +218,9 @@
             </li>
         </ul>
     </div>
+                </div>
             </div>
                
-</div>
             
         </section>
         
@@ -233,7 +233,7 @@
                <h2 class="text-center font-alt pt-5 pb-3">CAREER HISTORY</h2>
                </div>
                <div class="row justify-content-center">
-                <div class="col-12 col-md-6 mb-3" style="border-right:1px solid black ">
+                <div class="col-12 col-md-6 mb-3">
                     <div class=" wow fadeIn animated" style="visibility: visible; animation-name: fadeIn; ">
                      <div class="service_item" >
                          <i class="fas fa-code"></i> 
@@ -274,14 +274,14 @@
         </section>
         <!--career end-->
         <!--contact me start-->
-        <section class="section" id="contact">
+        <section class="section grid" id="contact">
             <div class="container">
                <div class="main-title">
-               <h2 class="text-center font-alt pt-5 pb-3">CONTACT WITH ME</h2>
+               <h2 class="text-center font-alt pt-3 pb-1 pr-3">CONTACT WITH ME</h2>
                </div>
           
                <div class="row justify-content-center align-items-center h-100">
-                    <div class="col-6 col-sm-6 col-md-8 col-lg-8 col-xl-8">
+                    <div class="col-sm-6 col-md-8 col-lg-8 col-xl-8">
                    <form id="from-group" method="post" action="mail_handeler.php">
                        <input name="name" type="text" class="form-control" placeholder="Your Name" required> <br>
                        <input name="email" type="text" class="form-control" placeholder="Your Email" required> <br>
