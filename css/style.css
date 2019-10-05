@@ -1,12 +1,16 @@
 .fixed-header-body{
     background: url(../image/b1.jpg);
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 .section{
     padding: 100px 0px;
     background: white;
     height: auto;
+}
+.container{
+    padding-right: 0px!important;
 }
 .header {
     background: none;
@@ -50,6 +54,10 @@
     border-radius:25px;
 }
 
+
+
+
+
 .home-banner-image {
     width: auto;
     height: 100vh;
@@ -74,6 +82,13 @@
     bottom: 0;
     min-width: 100vw;
     min-height: 100vh;
+    width: auto;
+}
+@media(max-width:700px){
+    .home-banner-image .fillWidth {
+  
+    width: 320px;
+}
 }
 .header {
     position: fixed;
@@ -85,13 +100,16 @@
 }
 .home-banner-image .banner-center-text {
     position: absolute;
-    top: 40%;
+    top: 243px;
     left: 15px;
     right: 15px;
     transform: translatey(-50%);
     z-index: 1;
     animation: text 2s 1;
 }
+
+
+
 .text{
     color:#D98217;
     font-weight: 600;
@@ -132,6 +150,7 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
 .font-alt{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -142,8 +161,9 @@
     line-height: 40px;
 }
 
-@media (max-width:768px)
+@media (max-width:700px)
 {
+
     .h5{
         font-size: 20px;
         line-height: 28px;
@@ -154,12 +174,6 @@
     .section{
         padding: 50px 0;
     }
-    .md-m-30px-t{
-        margin-top: 30px;
-    }
- .md-m-30px-t {
-    margin-top: 30px;
-}
     .header-style-3{
     background:white;
 }
@@ -176,6 +190,7 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
     .navbar .navbar-brand{
     color: black!important;
         
@@ -185,12 +200,13 @@
     color: black!important;
     border-radius:25px;
 }
+   
 }
   
 
 .skills{
     width: 600px;
-    margin: 60px auto;
+    margin: 0px auto;
     color:white;
 }
 .skills li{
@@ -218,7 +234,15 @@
     font-weight: 600;
     padding-left: 450px;
 }
-
+@media (max-width:700px){
+  .percent{
+    color: black;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    padding-left: 210px;
+}  
+}
 .html{
     width:70%;
     animation: html 2s;
@@ -306,11 +330,21 @@
 .ul{
     display:flex;
     position: absolute;
+    padding-left: 50px;
+    
+}
+@media (max-width:700px){
+    .ul{
+        
+        padding-left: 0px;
+    } 
 }
 .ul .li{
     list-style: none; 
     padding-right: 30px;
 }
+
+
 .ul .li a{
     width:40px;
     height:40px;
@@ -331,8 +365,30 @@
     color:white;
     
 }
-.ul .li a:hover{
-    background: blue;
+.ul .li .face{
+    border: 1px solid #3b5998;
+}
+.ul .li .face:hover{
+    background: #3b5998;
+}
+.ul .li .goog{
+ border: 1px solid #faaa5e;
+}
+.ul .li .goog:hover{
+   background: #faaa5e;
+
+}
+.ul .li .link{
+    border: 1px solid #895a4d;
+}
+.ul .li .link:hover{
+    background: #895a4d;
+}
+.ul .li .xin{
+    border: 1px solid #026466;
+}
+.ul .li .xin:hover{
+    background: #026466;
 }
 .facebook{
     color:#3b5998;
@@ -360,23 +416,30 @@
 }
 .row{
     height: auto;
+    margin-right: 0px!important;
 }
+.container{
+    text-align: center;
 
-
-
+}
+.tree{
+    display: inline-block;
+}
      .tree li{
         float: left;
         text-align: center;
         list-style-type: none;
-        padding: 20px 5px 0 35px;
+        padding: 20px 0px 0 0px;
         position: relative;
+        padding-right: 20px;
 }
 .tree ul{
     padding-top: 20px;
+    padding-left: 0px;
 
 }
 .tree ul li .aa{
-    margin-left:50px;
+    margin-left:-20px;
     width: 180px;
     height: 50px;
 }
@@ -410,6 +473,7 @@
     right: auto;
     left: 50%;
     border-left: 4px solid #D98217;
+
 }
 .tree li:only-child::after, .tree li:only-child::before{
    display: none; 
@@ -417,6 +481,7 @@
 
 .tree li:first-child::before, .tree li:last-child::after{
    border: 0 none;
+
 }
 .tree li:last-child::before{
     border-right: 4px solid #D98217;
@@ -430,7 +495,7 @@
     left: 50%;
     border-left: 4px solid #D98217;
     width: 0;
-    margin-left: 40px;
+    margin-left: -20px;
     margin-top: 50px;
     height: 40px;
 }
@@ -443,15 +508,16 @@
         float: left;
         text-align: center;
         list-style-type: none;
-        padding: 20px 5px 0 25px;
+        padding: 20px 5px 0px 0px;
         position: relative;
 }
+
 .tree ul{
     padding-top: 20px;
 
 }
 .tree ul li .aa{
-    margin-left:50px;
+    margin-left:0px;
     width: 180px;
     height: 50px;
 }
@@ -460,7 +526,7 @@
     border:1px solid #D98217;
     width: 270px;
     height: 300px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     margin-bottom: 20px;
     text-decoration: none;
     color:#D98217;
@@ -470,6 +536,7 @@
     -webkit-border-radius:5px;
     -moz-border-radius:11px;
 }
+   
 .tree li::before, .tree li::after{
     content: '';
     position: absolute;
@@ -479,6 +546,8 @@
     width:50%;
     height: 20px;
 }
+    
+    
 
 
 .tree li::after{
@@ -505,7 +574,7 @@
     left: 50%;
     border-left: 4px solid #D98217;
     width: 0;
-    margin-left: 27px;
+    margin-left: 0px;
     margin-top: 50px;
     height: 40px;
 }
@@ -513,7 +582,17 @@
     padding-top: 0;
 } 
 }
-@media only screen and (max-width : 800px){
+@media only screen and (max-width : 780px){
+    .row{
+    height: auto;
+}
+.container{
+    text-align: center;
+
+}
+.tree{
+    display: inline-block;
+}
     .tree li{
         float:inherit;
         text-align: center;
@@ -523,18 +602,19 @@
 }
     .tree ul li .aa{
     margin-bottom: 13.5px;
-    margin-left:50px;
+    margin-left:0px;
     width: 200px;
     height: 48px;
 }
     .tree ul{
     padding-top: 5px;
 
-}.tree li a{
+}
+    
+    .tree li a{
     border:1px solid #D98217;
-    width: 380px;
+    width: 250px;
     height: 300px;
-    padding: 5px 10px;
     margin-bottom: 20px;
     text-decoration: none;
     color:#D98217;
@@ -620,6 +700,14 @@ form .submit{
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
+}
+@media only screen and (max-width : 780px){
+    form .submit{
+        width: 100%;
+    }
+    .table{
+        width: 320px;
+    }
 }
 form .submit:hover{
     background-color: orangered;
