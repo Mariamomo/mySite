@@ -195,8 +195,8 @@
     color: black!important;
         
 }
-    .navbar .navbar-nav li a:hover{
-    background-color:#D98217;
+.navbar .navbar-nav li a:hover{
+    background-color:#D98217!important;
     color: black!important;
     border-radius:25px;
 }
@@ -583,7 +583,7 @@
 } 
 }
 @media only screen and (max-width : 780px){
-    .row{
+.row{
     height: auto;
 }
 .container{
@@ -705,10 +705,9 @@ form .submit{
     form .submit{
         width: 100%;
     }
-    .table{
-        width: 320px;
-    }
+
 }
+
 form .submit:hover{
     background-color: orangered;
     cursor: pointer;
@@ -717,3 +716,7 @@ form .submit:hover{
     padding: 0px;
     margin: 0px;
 }
+
+/*----read.php-----*/
+
+ 
